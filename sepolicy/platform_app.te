@@ -1,0 +1,3 @@
+allow platform_app app_data_file:file execute;
+allow platform_app irrcServer:binder { transfer call };
+allow platform_app irrc_service:service_manager find;

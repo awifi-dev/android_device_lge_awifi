@@ -14,6 +14,10 @@
 # Hwaddrs
 /system/bin/hwaddrs                                  u:object_r:hwaddrs_exec:s0
 
+# LG SwIRRC
+/dev/msm_IRRC_pcm_dec                                u:object_r:irrc_device:s0
+/system/bin/irrcServer                               u:object_r:irrcServer_exec:s0
+
 # Sensors
 /data/app/sensor_ctl_socket                          u:object_r:sensors_socket:s0
 

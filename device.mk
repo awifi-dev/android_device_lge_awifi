@@ -118,6 +118,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hwaddrs
 
+# LG SwIRRC
+PRODUCT_PACKAGES += liblgir
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8960

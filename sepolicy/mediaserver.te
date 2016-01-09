@@ -7,3 +7,6 @@ allow mediaserver system_data_file:sock_file write;
 # For text relocations in /system/lib/libmorpho_image_stab31.so
 # and /system/lib/libmorpho_movie_stabilization.so
 allow mediaserver system_file:file execmod;
+
+# LG SwIRRC
+allow mediaserver irrcServer:binder { transfer call };

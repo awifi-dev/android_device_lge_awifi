@@ -29,7 +29,7 @@ on init
     mkdir /persist 0771 system system
     
     # Symbols required for blobs
-    export LD_SHIM_LIBS "/system/lib/hw/camera.vendor.msm8960.so|libcamera_shim.so"
+    export LD_SHIM_LIBS /system/lib/hw/camera.vendor.msm8960.so|libcamera_shim.so:/system/lib/libirrc.so|liblgir.so
 
 on fs
     mount_all ./fstab.awifi

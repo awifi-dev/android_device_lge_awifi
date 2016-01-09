@@ -76,6 +76,10 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # Hardware tunables
 BOARD_HARDWARE_CLASS := device/lge/awifi/cmhw/
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/knock_on"
+ 
+# IRRC
+COMMON_GLOBAL_CFLAGS += -DHAVE_LG_SWIRRC
+COMMON_GLOBAL_CPPFLAGS += -DHAVE_LG_SWIRRC
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/lge/awifi

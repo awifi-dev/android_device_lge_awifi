@@ -1,5 +1,6 @@
 allow mediaserver camera_prop:property_service set;
 allow mediaserver init:unix_dgram_socket sendto;
+allow mediaserver irrcServer:binder { transfer call };
 
 # For text relocations in /system/lib/libmorpho_image_stab31.so
 # and /system/lib/libmorpho_movie_stabilization.so

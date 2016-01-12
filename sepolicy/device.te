@@ -1,1 +1,2 @@
 type encrypt_block_device, dev_type;
+type irrc_device, dev_type;

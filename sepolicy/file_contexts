@@ -9,6 +9,10 @@
 /dev/block/platform/msm_sdcc\.1/by-name/encrypt      u:object_r:encrypt_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/persist      u:object_r:persist_block_device:s0
 
+# IRRC
+/dev/msm_IRRC_pcm_dec                                u:object_r:irrc_device:s0
+/system/bin/irrcServer                               u:object_r:irrcServer_exec:s0
+
 # Sensors
 /data/app/sensor_ctl_socket                          u:object_r:sensors_socket:s0
 

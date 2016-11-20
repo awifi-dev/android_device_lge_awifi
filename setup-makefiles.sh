@@ -41,5 +41,11 @@ write_headers
 # The standard blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
+if [ -s "$CM_ROOT"/vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk ]; then
+    printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk)" >> "$PRODUCTMK"
+else
+    write_makefiles "$MY_DIR"/../../qcom/common/extractors/graphics-msm8974.txt
+fi
+
 # Done
 write_footers
